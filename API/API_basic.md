@@ -1,6 +1,57 @@
 # API
 
-## 1. 라이브러리
+- front-end와 back-end를 이어주는 것
+- front-end가 back-end에 정보요청을 하는데 이때 요청 규칙이 존재
+  > API는 사용규칙을 제공하는 것
+  > Application Programming Interface
+
+<br>
+
+- 요청(request)와 응답(response)
+
+| 요청(request)                                          | 응답(response)                  |
+| ------------------------------------------------------ | ------------------------------- |
+| 주소 (정보전달장소: API 서버 주소)                     | 형식: 정보 전달 형태(JSON, XML) |
+| 전송 방식(GET/POST)                                    | 응답 의미 설명                  |
+| 보낼것-query(검색어),sort(정렬방식), target(검색 대상) |
+
+<br>
+
+---
+
+** GET 방식: 주소창에 모든 정보를 포함하여 전달
+<br>
+** POST 방식:주소창이 아닌 내부적으로 정보 전달
+
+---
+
+\*\* JSON(JavaScript Object Notation): [키- 값]의 패턴으로 표현
+
+> JSON형식안에 Array나 JSON이 포함 가능
+
+---
+
+## 1. API 사용
+
+(1) jquery CDN
+
+```
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+```
+
+<br>
+(2) jquery ajax
+
+<br>
+
+## 1.1
+
+- Store as Gloval Variable(전역변수로 저장): 응답받은 JSON 객체를 console 창에서 다루기 위해 따로 저장해 두는 것
+  > 어떤 변수안에 응답받은 object가 들어가있는 지 확인 가능
+
+## 2. 활용
+
+### 1. 라이브러리
 
 - 자주 사용하는 코드를 재사용할 수 있는 형태로 가공
 - jquery
@@ -9,7 +60,7 @@
 
 - 빠르고 작고 feature-rich한 자바스크립트 라이브러리
 
-## 2. 실행방법
+### 2. 실행방법
 
 ### 2.1 속성값 변경
 
@@ -164,6 +215,7 @@ $('#btn_data').click(function(){
     console.log(statusText);
     console.log(xhr);
     console.log(xhr.status);
+    // console.log는 콘솔 창에 표시
   })
 }};
 ```
