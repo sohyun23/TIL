@@ -48,6 +48,44 @@ git remote add origin 내 링크 : 내링크랑 연결
 
 - [git.branch 이름]
 
+ <br>
+
+- 브랜치 생성: git branch 이름
+- 브랜치 목록 확인: git branch
+- 브랜치간 이동: git switch 이름
+- 브랜치 생성과 동시에 이동하기: git switch -c 이름
+  브랜치 삭제하기: git branch -d (이름)
+- 브랜치 이름 바꾸기: git branch -m 기존이름 새이름
+- 위치한 브랜치 내의 내역: git log
+
+<br>
+
+### 5.1 브랜치 합치기
+
+#### 5.1.1 <b> merge</b>
+
+- 브랜치와 메인브랜치를 합침
+- 브랜치의 히스토리를 남김
+  (rebase와의 차이점)
+- merge는 하나의 커밋 > reset가능
+- 병합된 브랜치는 삭제
+  <br>
+
+```
+git merge 브랜치명
+```
+
+#### 5.1.1 <b> rebase</b>
+
+- 브랜치자체를 메인브랜치로 옮겨 붙임
+
+```
+git switch 원래브랜치이름 // 원래브랜치에서 rebase 해야함
+git rebase main
+git merge 원래브랜치이름 // main브랜치의 가장 끝으로 이동
+// 이후 브랜치 삭제
+```
+
 ## 6. Remote Repositoty
 
 ## 7. git status
@@ -64,3 +102,9 @@ git remote add origin 내 링크 : 내링크랑 연결
 2. push 관련
 
 - git push -f = git push --force: 강제로 나의 최신 데이터를 push하는 것.
+
+## 9. 협업
+
+- main 브랜치가 아닌 복사본 develop브랜치 생성
+
+- feature 브랜치에 기능을 개발해보고 잘되면 merge
