@@ -1,0 +1,465 @@
+.headnav{
+  background-color: #0078D4;
+  height: 50px;
+  /*padding: 10px;*/
+}
+.title{
+  color: white;
+  text-decoration: none;
+}  
+.menu{
+  background-color: #0078D4;
+  border: none;
+  padding: 10px 20px;
+}
+.menu:hover{
+  background-color: #014477;
+}
+.inputsearchedit{
+  padding-top: 4px;
+  padding-left: 7px;
+}
+.search:hover{
+  background-color: #dfdcdcac;
+}
+.searchedit {
+  background-color: #dfdcdcac;
+  padding-left:15px;
+  padding-right: 5px;
+  padding-bottom: 8px;
+  padding-top: 6px;
+  height: 34px;
+  border-radius: 3px 0px 0px 3px;
+  border: transparent;
+  color: #0078D4;
+}
+.searchedittwo{
+  color: white;
+}
+.search{
+  padding-top: 6px;
+  height: 40px;
+  width:40%;
+  margin:0px;
+
+}
+.searchbox{
+  width: 80%;
+  border-radius: 0px 3px 3px 0px;
+  border: transparent;
+  background-color:#dfdcdcac
+}
+.searchbox:hover{
+  background-color: white;
+}
+.searchbtn{
+  display: block;
+  height: 50px;
+  width: 48px;
+  border: none;
+  background-color: #0078D4;
+}
+.searchbtn:hover{
+  background-color: #014477;
+}
+.dotsbtn{
+  display: none;
+  height: 50px;
+  width: 48px;
+  border: none;
+  background-color: #0078D4
+
+}
+.dotsbtn:hover{
+  background-color: #014477;
+}
+.dotsedit{
+  color: white;
+}
+.upgradebtn{
+  display: block;
+  height: 50px;
+  width: 48px;
+  border: none;
+  background-color: #0078D4
+}
+.upgradebtn:hover{
+  background-color: #014477;
+}
+.gemedit{
+  color: white;
+}
+.settingbtn{
+  display: block;
+  height: 50px;
+  width: 48px;
+  border: none;
+  background-color: #0078D4
+}
+.settingbtn:hover{
+  background-color: #014477;
+}
+.helpbtn{
+  display: block;
+  height: 50px;
+  width: 48px;
+  border: none;
+  background-color: #0078D4
+}
+.helpbtn:hover{
+  background-color: #014477;
+}
+.helpedit{
+  color: white;
+}
+.settingedit{
+  color: white;
+}
+.mypagebtn{
+  display: block;
+  height: 50px;
+  width: 48px;
+  border: none;
+  background-color: #0078D4
+}
+.mypagebtn:hover{
+  background-color: #014477;
+}
+.mypageedit{
+  color: white;
+}
+
+
+
+
+
+.sidebar{
+  height: 60px;
+  width: 200px;
+  padding-top: 22px;
+  padding-left: 20px;
+}
+.sidelist{
+  list-style: none;
+  padding-left: 16px;
+}
+.sidebtn{
+  height: 45px;
+  width: 200px;
+  text-align: left;
+  font-size: 90%;
+  border: none;
+  background-color: #FFFFFF;
+}
+.ms-Icon--FabricFolder{
+  padding-right: 5px;
+  padding-top: 3px;
+  padding-bottom: 2px;
+}
+.ms-Icon--Clock{
+  padding-right: 5px;
+  padding-top: 3px;
+  padding-bottom: 2px;
+}
+.ms-Icon--PictureFill{
+  padding-right: 5px;
+  padding-top: 3px;
+  padding-bottom: 2px;
+}
+.ms-Icon--People{
+  padding-right: 5px;
+  padding-top: 3px;
+  padding-bottom: 2px;
+}
+.ms-Icon--RecycleBin{
+  padding-right: 5px;
+  padding-top: 3px;
+  padding-bottom: 2px;
+}
+.sidenav{
+  background-color: #FFFFFF;
+  width: 250px;
+  border-right: 1px solid #c9c9c967 ;
+  margin: 0px;
+} 
+.sidefooter{
+  margin-top: 350px;
+}
+.notice{
+  font-size: small;
+}
+.noticedetail{
+  font-size: small;
+  color: #0078D4;
+}
+.storagepurchase{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  width: 200px;
+  height: 60px;
+}
+.storagebtn{
+  width: 200px;
+  height: 40px;
+  border: 1px solid #dcd9d9;
+  border-radius: 3px;
+  color: #0078D4;
+}
+.sizetaken{
+  width: 82%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+}
+.sizetake{
+  border: none;
+  height: 3px;
+  color: #9e9e9ef7;
+  background-color: #9e9e9ef7;
+}
+.usebyte{
+  margin-top: 4px;
+  font-size: small;
+  color: #0078D4;
+}
+.appdownload{
+  margin-top: 30px;
+
+}
+.appdownloadhref{
+  font-size: small;
+  font-weight: bold;
+  color: #0078D4;
+  text-decoration: none;
+}
+
+
+
+
+.mainbox{
+  width: calc(100vw - 250px);
+}
+.topbar{
+  height: 70px;
+  padding-top: 15px;
+  border-bottom: 1px solid #c9c9c967 ;
+}
+.body{
+  height: calc(100vh - 50px);
+
+}
+.topbarleft{
+  margin-left: 20px;
+  display: flex;
+}
+.newbtn{
+  background-color: #0078D4;
+  font-weight: bold;
+}
+.myfile{
+  height: 93px;
+  padding: 36px 32px 20px 32px;
+  font-size: 140%;
+  font-weight: bold;
+  display: flex;
+  flex: 0 0 auto;
+}
+.contentlist{
+  box-shadow: 2px 2px #d8d6d6;
+  margin-right: 32px;
+  margin-left: 32px;
+}
+.contentlist:hover{
+  
+}
+.contentinform{
+  height: 45px;
+  overflow: hidden;
+}
+.contentinform:hover{
+  background-color: #dfdcdcac;
+}
+.totalcheckbox{
+  width: 18px;
+  padding: 15px;
+}
+.bi-file-earmark{
+  padding: 9px 20px;
+}
+.filename{
+  display: flex;
+  flex: 0 0 auto;
+  width: 28%;
+  padding-left: 25px;
+  padding-top: 7px;
+}
+.editday{
+  display: flex;
+  flex: 0 0 auto;
+  width: 14%;
+  padding-top: 7px;
+}
+.filesize{
+  display: flex;
+  flex: 0 0 auto;
+  width: 14%;
+  padding-top: 7px;
+  padding-left: 20px;
+}
+.fileshare{
+  display: flex;
+  flex: 0 0 auto;
+  width: 17%;
+  padding-top: 7px;
+  padding-left: 20px;
+}
+
+
+.briefbtn{
+  border: 1px solid white;
+  width: 60px;
+  height: 40px;
+}
+button{
+  background-color: transparent;
+}
+button:hover{
+  background-color: #dfdcdcac;
+}
+
+.newbtn{
+  display: block;
+  width: 148px;
+  height: 32px;
+  border: transparent;
+  border-radius: 3px;
+  color: #FFFFFF;
+}
+.newbtn:hover{
+  background-color: #014477;
+
+}
+.uploadbtn{
+  display: block;
+  width: 102px;
+  height: 32px;
+  border: 2px solid white;
+
+}
+.deletebtn{
+  display: block;
+  width: 102px;
+  height: 32px;
+  border: 2px solid white;
+}
+
+.plusiconbold{
+  content: \F64D;
+}
+.ms-Icon--Delete{
+
+}
+.sortbtn{
+  display: block;
+  width: 88px;
+  height: 32px;
+  border: 2px solid white;
+}
+.listbtn{
+  display: block;
+  width: 52px;
+  height: 32px;
+  border: 2px solid white;
+}
+.informbtn{
+  display: block;
+  width: 75px;
+  height: 32px;
+  border: 2px solid white;
+}
+
+
+#list{
+  list-style: none;
+  padding:0px;
+}
+.listcheckbox:hover{
+  background-color: #dfdcdcac;
+}
+.listcheckbox{
+  height: 45px;
+  border: 1px solid #c9c9c967;
+
+}
+.checkboxpadding{
+  padding-top: 15px;
+}
+.checkboxes{
+  width: 18px;
+  height: 18px;
+}
+.folderimg{
+  padding: 9px 20px;
+}
+.document{
+  width: 300px;
+  padding-left: 25px;
+  padding-top: 9px;
+}
+.date{
+  width: 150px;
+  font-size: small;
+  padding-top: 13px;
+}
+.nonesize{
+  width: 150px;
+}
+.sharenot{
+  width: 170px;
+  padding-left: 10px;
+  font-size: small;
+  padding-top: 12px;
+}
+
+
+
+
+/* 미디어쿼리*/
+@media (max-width: 700px) {
+  #search{
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 1000px) {
+  .sidenav{
+    display: none;
+  }
+  .briefbtn{
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .briefbtn{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .settingbtn{
+    display: none;
+  }
+  .helpbtn{
+    display: none;
+  }
+  .dotsbtn{
+    display: block;
+  }
+}
+
+
+
+

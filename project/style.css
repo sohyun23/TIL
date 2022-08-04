@@ -1,0 +1,21 @@
+.title{
+    height: 60px;
+    background-color: aliceblue;
+
+}
+.main{
+    display: flex;
+}
+.movielist{
+    width: 800px;
+}
+.order{
+    background-color: rgb(171, 216, 255);
+}
+.mlist{
+    height: 400px
+    background-color: rgb(171, 216, 255);
+}
+.movieinform{
+    background-color: rgb(197, 255, 104);
+}

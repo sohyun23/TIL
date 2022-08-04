@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OneDrive</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/9.6.1/css/fabric.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+</head>
+
+
+<body>
+  <header>
+    <!-- navbar -->
+    <nav class="headnav" style="display: flex; justify-content: space-between;">
+
+      <div class="menuicon">
+        <button type="button" class="menu">
+          <i class="ms-Icon ms-Icon--WaffleOffice365 inputsearchedit" aria-hidden="true"></i>
+        </button>
+        <a class="title" href="#"><b>OneDrive</b></a>
+      </div>
+
+      <div class="search" id="search" style="display: flex; justify-content:center">
+        <i class="ms-Icon ms-Icon--Search searchedit" aria-hidden="true"></i>
+        <input class="searchbox" type="search" name="filesearch" placeholder="모두 검색">
+      </div>
+
+      <div class="righticon" style="display: flex;">
+        <button type="button" class="searchbtn"><i class="ms-Icon ms-Icon--Search searchedittwo" aria-hidden="true"></i>
+        </button> 
+        
+        <button type="button" class="upgradebtn"><i class="bi bi-gem gemedit" aria-hidden="true"></i>
+        </button> 
+
+        <button type="button" class="dotsbtn"><i class="bi bi-three-dots dotsedit"></i>
+        </button> 
+
+        <button type="button" class="settingbtn"><i class="ms-Icon ms-Icon--Settings settingedit" aria-hidden="true"></i></span>
+        </button> 
+
+        <button type="button" class="helpbtn"><i class="bi bi-question-lg helpedit" aria-hidden="true"></i>
+        </button> 
+
+        <button type="button" class="mypagebtn"><i class="bi bi-person mypageedit"></i><span class="material-symbols-outlined"></span>
+        </button> 
+      </div>
+
+    </nav>
+  </header>
+
+  <div class="body" style="display:flex;">
+    <!-- sidebar -->
+    <div class="sidenav">
+      <div class="sidebar">조소현</div>
+      <div class="contents">
+        <ul class="sidelist">
+          <li><button type="button" class="sidebtn"><i class="ms-Icon ms-Icon--FabricFolder" aria-hidden="true"></i>내 파일</li></button>
+          <li><button type="button" class="sidebtn"><i class="ms-Icon ms-Icon--Clock" aria-hidden="true"></i>최근</li></button>
+          <li><button type="button" class="sidebtn"><i class="ms-Icon ms-Icon--PictureFill" aria-hidden="true"></i>사진</li></button>
+          <li><button type="button" class="sidebtn"><i class="ms-Icon ms-Icon--People" aria-hidden="true"></i>공유됨</li></button>
+          <li><button type="button" class="sidebtn"><i class="ms-Icon ms-Icon--RecycleBin" aria-hidden="true"></i>휴지통</li></button>
+        </ul>
+      </div>
+
+      <div class="sidefooter">
+        <div class="notice">모든 파일 및 사진에 대해 100GB의<br>스토리지를 받으세요.</div>
+        <div class="noticedetail"><a href="#">저장소 요금제에 대해 자세히 알아보세요.</a></div>
+        <div class="storagepurchase"><button type="button" class="storagebtn"><i class="bi bi-gem" aria-hidden="true"></i> 저장소 구매
+        </button> </div>
+        <div class="sizetaken"><hr class="sizetake"></div>
+        <div class="usebyte" style="margin-left: 8%;"><a href="#">0바이트5GB 중 사용</a></div>
+        <div class="appdownload"><a class="appdownloadhref" href="#"><b>OneDrive 앱 다운로드</b></a> </div>
+      </div>
+    </div>
+
+    <div class="mainbox">
+      <!-- maintopbar -->
+      <div class="topbar" style="display: flex; justify-content: space-between;">
+        <div class="topbarleft">
+          <button type="button" class="briefbtn"><i class="ms-Icon ms-Icon--GlobalNavButton" aria-hidden="true"></i><span class="brief"></span></button> 
+          <button type="button" class="newbtn" onclick="newfolder()"><i class="bi bi-plus-lg plusiconbold"></i><b style="font-size: 14px;"> 새로 만들기 </b> <span class="#"></span></button> 
+          <button type="button" class="uploadbtn"><i class="ms-Icon ms-Icon--Upload" aria-hidden="true"></i> 업로드 <span class="#"></span></button>
+          <button type="button" class="deletebtn" onclick="deleteFolder()"><i class="ms-Icon ms-Icon--Delete" aria-hidden="true"></i> 삭제 <span class="#"></span></button>
+        </div>
+
+        <div class="topbarright" style="display: flex;">
+          <button type="button" class="sortbtn"><i class="ms-Icon ms-Icon--SortLines" aria-hidden="true"></i> 정렬 <span class="#"></span></button>
+          <button type="button" class="listbtn"><i class="bi bi-text-left"></i><span class="#"></span></button> 
+          <button type="button" class="informbtn"><i class="bi bi-box-arrow-left"></i> 정보<span class="#"></span></button>
+        </div>
+      </div>
+
+      <!-- folderlist -->
+      <div class="myfolder">
+        <div class="myfile">내 파일</div>
+        <div class="contentlist">
+          <div class="contentinform" style="display: flex;">
+            <input type="checkbox" class="totalcheckbox" name="all" onclick="selectAll(this)">
+            <i class="bi bi-file-earmark"  style="width: 60x;"></i>
+            <div class="filename"> 이름 <i class="ms-Icon ms-Icon--SortUp" aria-hidden="true"></i></div>
+            <div class="editday"> 수정한 날짜 </div>
+            <div class="filesize"> 파일크기 </div>
+            <div class="fileshare"> 공유 </div>
+          </div>
+
+          <ul id="list">
+          </ul>
+        </div>
+
+      </div>
+
+      </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+</body>
+<script src="index.js"></script>
+</html>

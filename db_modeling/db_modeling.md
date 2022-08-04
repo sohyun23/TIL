@@ -8,23 +8,23 @@
 
 ### 1.1 데이터베이스 설계
 
-> - 시스템에 사용되는 Attribute를 List-Up
-> - Entity를 List-UP
->   > \*\* Entity: 행동을 하는 객체, 다른 행동에 영향을 받는 객체, 보통 명사의 경우
-> - Entity간의 Relation을 유추
-> - Entity 및 Relation Table 생성, Primary Key
-> - 중복되는 Attribute 제거,정규화
->   ex) entity: 학생
->   attribute: 학번, 이름, 학점, 전공
->   instance: 학생 하나하나
+- 시스템에 사용되는 Attribute를 List-Up
+- Entity를 List-UP
+  > \*\* Entity: 행동을 하는 객체, 다른 행동에 영향을 받는 객체, 보통 명사의 경우
+- Entity간의 Relation을 유추
+- Entity 및 Relation Table 생성, Primary Key
+- 중복되는 Attribute 제거,정규화<br>
+  ex) entity: 학생
+  attribute: 학번, 이름, 학점, 전공
+  instance: 학생 하나하나
 
 > <고려사항>
 
-> - Hidden state를 생각
-> - 계산으로 나와야하는 attribute같은 경우 테이블을 따로 만들거나 trigger를 통해 따로 저장
->   -> isolation이 안될 수 있음
-> - primary key
-> - Entity
+- Hidden state를 생각
+- 계산으로 나와야하는 attribute같은 경우 테이블을 따로 만들거나 trigger를 통해 따로 저장
+  -> isolation이 안될 수 있음
+- primary key
+- Entity간의 관계
 
 ---
 
@@ -47,15 +47,15 @@
 
 - ERD(Entity Relation Diagram): DB상에 존재하는 Entity들 간의 관계를 표
 
-  > > 관계들의 정보를 표현하여 DB구성
+  > 관계들의 정보를 표현하여 DB구성
 
 - 테이블의 유형에 따라 나눔
 
-  > ### 2.2.1 Table
-  >
-  > - <b>데이터 테이블</b>: 조직의 중요한 데이터를 가진 가장 일반적인 테이블
-  > - <b>연결 테이블(Linking Table)</b>: 정보와 정보가 어떤 연결관계에 있는지(동사에 대한 정보, 행위에 대한 정보 )
-  > - <b>부분집합 테이블(Subset Table)</b>: 한 테이블에 대한 자세한 정보.
+### 2.2.1 Table
+
+- <b>데이터 테이블</b>: 조직의 중요한 데이터를 가진 가장 일반적인 테이블
+- <b>연결 테이블(Linking Table)</b>: 정보와 정보가 어떤 연결관계에 있는지(동사에 대한 정보, 행위에 대한 정보 )
+- <b>부분집합 테이블(Subset Table)</b>: 한 테이블에 대한 자세한 정보.
 
 - 테이블 이름 설정
 
@@ -63,12 +63,14 @@
 
 - 두개의 테이블의 관계= 속성을 공유하는 방법
 
-> #### 2.3.1
->
-> - <b>1:1</b> - 한개의 테이블의 상세내용
->   (Subset Table)
->   > ex) self relationship: 자신의 상사나 팀원관리
+#### 2.3.1
 
-> - <b>1:m</b>- 한개 테이블과 관련된 m개의 instance정보를 다른 테이블이 가짐
+- <b>1:1</b> - 한개의 테이블의 상세내용(Subset Table)<br>
 
-> - <b>m:n</b>- Linking Table
+ex) self relationship: 자신의 상사나 팀원관리
+
+- <b>1:m</b>- 한개 테이블과 관련된 m개의 instance정보를 다른 테이블이 가짐
+
+- <b>m:n</b>- Linking Table
+
+---

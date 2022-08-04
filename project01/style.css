@@ -1,0 +1,158 @@
+html{
+    background:linear-gradient( to bottom, #161722, rgb(27, 28, 35))
+}
+.nav{
+    display: flex;
+    height: 60px;
+    width: calc(100vw);
+    background-color:transparent;
+    border-bottom: 1px solid #717171;
+}
+.navleft{
+    display: flex;
+}
+.navbtn{
+    height: 50px;
+    width: 45px;
+    border: none;
+}
+.navicon{
+    font-size: 30px;
+    color:white;
+    padding-top: 6px;
+}
+.searchbtn{
+    height: 60px;
+    width: 35px;
+    border: none;
+}
+.search{
+
+}
+.searchicon{
+    font-size: 20px;
+    color:white;
+    
+}
+.logo{
+    margin-left: 42%;
+    color:white;
+}
+.main{
+    height: calc(100vh - 50px);
+}
+
+button{
+    background-color: transparent;
+  }
+/*--------------------------------------*/  
+.slideshow{
+    margin-top: 5%;
+}
+
+/*--------------------------------------*/
+  * {box-sizing: border-box;}
+  body {font-family: Verdana, sans-serif;}
+  .mySlides {display: none;}
+  img {vertical-align: middle;}
+  
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Caption text */
+  .text {
+    color: #000000;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
+
+
+/*--------------------------------------*/
+
+.bottom{
+    display: flex;
+    margin-left: 22%;
+    margin-right: 35%;
+    margin-top: 40px;
+    padding: 15px 10px;
+    background-color: black;
+    width: calc(50vw);
+    height: 70px;
+
+}
+
+.moviesearch{
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-right: 1px solid #d6d6d6 ;
+    border-radius: 0px 0px 0px 8px;
+}
+.nowintheaters{
+    margin-left: 10%;
+    
+}
+.nowbtn{
+    width: 200px;
+    height: 40px;
+    background-color: #d6d6d6;
+    color: white;
+    border-radius: 8px;
+}
